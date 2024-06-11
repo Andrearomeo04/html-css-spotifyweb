@@ -27,7 +27,6 @@
     justify-content: space-between;
 }
 
-
 .icons {
     width: 35px;
 }
@@ -122,6 +121,58 @@ main {
 li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.24);
+}
+
+.bottom-section {
+    display: flex;
+}
+
+.left-col,
+.right-col {
+    width: 20%;
+    background-color: orange;
+    border: 1px solid black;
+}
+.center-col {
+    width: 60%;
+    background-color: salmon;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button-list li {
+    margin: 25px;
+}
+
+.playbar-controls {
+    display: flex;
+    width: 100%;
+}
+
+.playbar-controls {
+    max-width: 500px;
+}
+
+.playbar-controls .current,
+.playbar-controls .end {
+    width: 10%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.playbar-controls .playbar {
+    width: 80%;
+    background-color: goldenrod;
+    border: 1px solid black;
 }
 
 /* UTILITY CLASSES  */
