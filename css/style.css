@@ -26,28 +26,87 @@
 }
 
 .sidebar-top {
-    height: calc(100% - 80px);
-    background-color: gold;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
 .logo {
-    height: 80px;
-    background-color: silver;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo img:last-child {
+    display: none;
 }
 
 .nav {
-    height: 150px;
-    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.nav .icon-wrap  {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrap span:not(.exclude) {
+    display: none;
+}
+
+.nav img {
+    width: 30px;
+    margin: 5px 0px;
 }
 
 .playlist {
-    height: 300px;
-    background-color: rebeccapurple;
+    overflow-y: hidden;
+    display: none;
+}   
+
+.playlist h2 {
+    padding-bottom: 10px;
+}
+
+.playlist a i {
+    font-size: 35px;
+    color: gray;
+    margin-right: 10px;
+}
+
+.playlist-list {
+    list-style-type: none;
+    margin-top: 20px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.playlist-list li {
+    margin: 10px;
 }
 
 .sidebar-bottom {
-    height: 80px;
-    background-color: blue;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    display: none;
+}
+
+.sidebar-bottom img {
+    width: 20px;
+    margin: 5px;
 }
 
 .main-content {
@@ -259,8 +318,9 @@ li a {
     height: calc(100vh - 200px);
 }
 
-.bg.color-1 {
+.bg-color-1 {
     background-color: grey;
+    border-radius: 50%;
 }
 
 .main-color-1 {
@@ -286,6 +346,38 @@ li a {
     .sidebar {
         align-items: flex-start;
     }
+    .sidebar-bottom {
+        display: block;
+    }
+    hr {
+        display: block;
+        color: rgba(255, 255, 255, 0.192);;
+    }
+    .logo {
+        justify-content: flex-start;
+    }
+    .logo img:first-child {
+        display: none;
+    }
+    .logo img:last-child {
+        display: inline-block;
+        width: 140px;
+    }
+    .nav {
+        align-items: flex-start;
+    }
+    .playlist {
+        display: inline-block;
+    }
+    .logo,
+    .nav,
+    .playlist,
+    .sidebar-bottom {
+        padding: 20px;
+    }
+    .icon-wrap span:not(.exclude) {
+        display: inline;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -297,5 +389,20 @@ li a {
     }
     .flex-column i {
         margin: 5px;
+    }
+    .sidebar {
+        width: 300px;
+    }
+    .main-content{
+        width: calc(100vw - 300px);
+    }
+    header {
+        width: calc(100vw - 300px);
+        left: 300px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .col-16 {
+        width: calc(100% / 6);
     }
 }
