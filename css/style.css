@@ -17,6 +17,7 @@
     bottom: 0;
     z-index: 1;
     width: 100vw;
+    color: white;
 }
 
 .sidebar {
@@ -129,14 +130,11 @@ li a {
 
 .left-col,
 .right-col {
-    width: 20%;
-    background-color: orange;
-    border: 1px solid black;
+    width: 25%;
 }
+
 .center-col {
-    width: 60%;
-    background-color: salmon;
-    border: 1px solid black;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,29 +148,76 @@ li a {
 }
 
 .button-list li {
-    margin: 25px;
+    margin: 15px;
+}
+
+.right-col {
+    padding-right: 10px;
 }
 
 .playbar-controls {
     display: flex;
+    max-width: 550px;
     width: 100%;
 }
 
-.playbar-controls {
-    max-width: 500px;
+.playbar-cont {
+    padding: 5px 0px;
+    width: 100%;
+    height: 10;
+}
+
+.playbar-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #5a5a5a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.playbar-progress {
+    width: 15%;
+    height: 100%;
+    background-color: #c1c1c1;
+    border-radius: 10px;
+}
+
+.playbar-controls .current {
+    text-align: right;
 }
 
 .playbar-controls .current,
 .playbar-controls .end {
-    width: 10%;
-    background-color: white;
-    border: 1px solid black;
+    width: 20%;
+    padding: 0 5px;
 }
 
-.playbar-controls .playbar {
-    width: 80%;
-    background-color: goldenrod;
-    border: 1px solid black;
+.left-col {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.left-col img {
+    width: 40px;
+}
+
+.left-col p {
+    padding: 0 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-col {
+    display: flex;
+    align-items: center;
+}
+
+.right-col i {
+    margin: 5px;
 }
 
 /* UTILITY CLASSES  */
@@ -229,5 +274,11 @@ li a {
 @media screen and (min-width: 768px) {
     .col-16 {
         width: calc(100% / 4);
+    }
+    .flex-column {
+        flex-direction: row;
+    }
+    .flex-column i {
+        margin: 5px;
     }
 }
