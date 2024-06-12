@@ -56,9 +56,12 @@
 }
 
 .content {
-    height: 200px;
-    background-color: purple;
-    margin: 10px;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.content-title {
+    margin: 20px 10px;
 }
 
 header {
@@ -105,8 +108,22 @@ header strong {
     width: 50%;
 }
 
+.col-16 img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.col-16 p {
+    padding-top: 15px;
+}
+
 main {
     margin-top: 100px;
+    padding: 20px;
+}
+
+main .container:last-child .col-16 img {
+    border-radius: 50%;
 }
 
 .menu-section.text-center {
@@ -172,7 +189,6 @@ li a {
     height: 100%;
     background-color: #5a5a5a;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .playbar-progress {
@@ -228,6 +244,10 @@ li a {
     font-size: 14px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-25 {
     font-size: 25px;
 }
@@ -251,6 +271,10 @@ li a {
 
 .main-color-1 {
     color: white;
+}
+
+.main-color-2 {
+    color: rgba(255, 255, 255, 0.425);
 }
 
 /* MEDIA QUERY  */
