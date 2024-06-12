@@ -23,32 +23,32 @@
 .sidebar {
     width: 50px;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
-.icons {
-    width: 35px;
+.sidebar-top {
+    height: calc(100% - 80px);
+    background-color: gold;
 }
 
-.sidebar-bottom,
-.sidebar-bottom .main-col-2 img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo {
+    height: 80px;
+    background-color: silver;
 }
 
-.sidebar-bottom img:nth-child(1) {
-    width: 20px;
-    margin-bottom: 10px;
+.nav {
+    height: 150px;
+    background-color: azure;
 }
 
-.sidebar-bottom img:nth-child(2) {
-    width: 30px;
-    margin-bottom: 10px;
+.playlist {
+    height: 300px;
+    background-color: rebeccapurple;
 }
 
+.sidebar-bottom {
+    height: 80px;
+    background-color: blue;
+}
 
 .main-content {
     width: calc(100vw - 50px);
@@ -96,12 +96,6 @@ header strong {
 
 .col-100 {
     width: 100%;
-}
-
-.col-100-side {
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .col-16 {
@@ -181,7 +175,6 @@ li a {
 .playbar-cont {
     padding: 5px 0px;
     width: 100%;
-    height: 10;
 }
 
 .playbar-bg {
@@ -189,6 +182,7 @@ li a {
     height: 100%;
     background-color: #5a5a5a;
     border-radius: 10px;
+    height: 10px;
 }
 
 .playbar-progress {
@@ -291,7 +285,6 @@ li a {
     }
     .sidebar {
         align-items: flex-start;
-        padding: 10px;
     }
 }
 
